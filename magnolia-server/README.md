@@ -1,12 +1,22 @@
 # Magnolia Community
 
-Reference: [Installing Magnolia](https://docs.magnolia-cms.com/product-docs/getting-started-with-magnolia/installing-magnolia/)
+Reference: [Magnolia Getting Started](https://docs.magnolia-cms.com/product-docs/getting-started-with-magnolia/)
 
-- Install [SDKMAN!](https://sdkman.io/install/) to install Java
+> Get [SDKMAN!](https://sdkman.io/install/) to install Java and [Magnolia CLI](https://docs.magnolia-cms.com/magnolia-cli/) for further works.
 
 In a typical set up, Magnolia is installed with two web applications: the author instance and the public instance.
 
 - **Author Instance**: The Magnolia authoring instance is used for editing content. Administrators and editors have to login to this instance's Admin Central for configuring Magnolia and for adding or modifying pages.
 - **Public Instance**: The Magnolia public instance is accessed by website visitors. It is not accessed by editors directly but administrators are able to login and configure this instance as well.
 
-## 1. Components
+## 1. Modules
+
+Magnolia has a modular architecture. A module can perform a task, package content, or provide specialized functionality.
+
+### Light Modules
+
+Reference: [docs.magnolia-cms.com](https://docs.magnolia-cms.com/product-docs/modules/light-modules/)
+
+A Magnolia light module is a file and folder-based module. It can define every Magnolia item which can be configured in YAML – such as apps, content types, templates, dialogs, themes, and others. It can also contain a lightweight YAML-based module descriptor and web resources such as css and javascript files.
+
+## 2. Components
