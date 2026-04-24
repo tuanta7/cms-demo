@@ -1,0 +1,16 @@
+title: pricing
+templateScript: /webapp/templates/pages/pricing.ftl
+renderType: freemarker
+dialog: webapp:pages/pricing
+visible: true
+
+areas:
+  main:
+    title: Main Area
+    availableComponents:
+      Plan:
+        id: webapp:components/plan
+      CheckoutButton:
+        id: webapp:components/checkoutButton
+  extras:
+    title: Extras Area

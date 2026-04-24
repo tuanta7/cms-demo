@@ -1,0 +1,4 @@
+title: plan
+dialog: webapp:components/plan
+templateScript: /webapp/templates/components/plan.ftl
+renderType: freemarker

@@ -21,6 +21,11 @@ A Magnolia light module is a file and folder-based module. It can define every M
 
 ## 2. Components
 
-- **Pages**
-- **Areas**
-- **Assets**
+- **Pages**:
+- **Apps**:
+- **Content Types**:
+- **Templates**:
+- **Dialogs**:
+- **Themes**:
+- **Areas**:
+- **Assets**:

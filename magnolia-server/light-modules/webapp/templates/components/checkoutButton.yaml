@@ -1,0 +1,4 @@
+title: checkoutButton
+dialog: webapp:components/checkoutButton
+templateScript: /webapp/templates/components/checkoutButton.ftl
+renderType: freemarker
