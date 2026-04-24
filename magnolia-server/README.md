@@ -20,3 +20,7 @@ Reference: [docs.magnolia-cms.com](https://docs.magnolia-cms.com/product-docs/mo
 A Magnolia light module is a file and folder-based module. It can define every Magnolia item which can be configured in YAML – such as apps, content types, templates, dialogs, themes, and others. It can also contain a lightweight YAML-based module descriptor and web resources such as css and javascript files.
 
 ## 2. Components
+
+- **Pages**
+- **Areas**
+- **Assets**
