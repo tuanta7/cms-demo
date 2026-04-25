@@ -6,7 +6,7 @@ import CreateAppPlugin from '@magnolia/cli-create-app-plugin';
 import CreateLightModulePlugin from '@magnolia/cli-create-light-module-plugin';
 import StartPlugin from '@magnolia/cli-start-plugin';
 export default {
-	lightModule: 'webapp',
+	lightModule: 'webapp-freemaker',
 	analytics: {
 		enabled: true,
 		// Set to false to turn off analytics
@@ -25,6 +25,7 @@ export default {
 			framework: '@magnolia/cli-freemarker-prototypes@3.0.0',
 		}),
 		new CreateComponentPlugin({
+			lightModule: 'hello-magnolia',
 			framework: '@magnolia/cli-freemarker-prototypes@3.0.0',
 		}),
 		new CreateVirtualUriPlugin(),
@@ -33,7 +34,9 @@ export default {
 			lightModule: 'common',
 		}),
 		new CreateLightModulePlugin({}),
-		new StartPlugin(),
+		new StartPlugin({
+			tomcatPath: './apache-tomcat',
+		}),
 	],
 	lightModulesPath: './light-modules',
 };

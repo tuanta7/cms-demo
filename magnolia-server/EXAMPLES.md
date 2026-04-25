@@ -50,7 +50,7 @@ mgnl create-content-type [options]  # create a content type in a light module
 mgnl create-virtual-uri [options]   # create a virtual URI mapping in a light module
 ```
 
-## 2. Setup Preview Screen
+## 2. Headless Preview (Next.js)
 
 ## 3. SSO for User
 

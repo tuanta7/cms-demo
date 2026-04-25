@@ -1,0 +1,16 @@
+title: quotation
+dialog: webapp-freemaker:components/quotation
+templateScript: /webapp-freemaker/templates/components/quotation.ftl
+renderType: freemarker
+
+areas:
+  item1: &id0001
+    title: Items
+    availableComponents:
+      quotation:
+        id: webapp-freemaker:components/quotation/quotation
+
+  item2: *id0001
+  item3: *id0001
+  item4: *id0001
+  item5: *id0001
