@@ -1,0 +1,33 @@
+datasource:
+  workspace: tourvehicles
+  namespaces:
+    mt: https://www.magnolia-cms.com/jcr/mgnl
+  autoCreate: true
+
+model:
+  nodeType: mt:tourVehicle
+  properties:
+    - name: vehicleType
+      options:
+        - name: bicycle
+          value: bicycle
+          label: Bicycle
+        - name: motorbike
+          value: motorbike
+          label: Motorbike
+        - name: van
+          value: van
+          label: Van
+        - name: boat
+          value: boat
+          label: Boat
+        - name: car
+          value: car
+          label: Car
+        - name: other
+          value: other
+          label: Other
+    - name: numberOfSeats
+      type: Double
+    - name: description
+      type: richText

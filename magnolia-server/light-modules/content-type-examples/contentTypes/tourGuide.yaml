@@ -1,0 +1,24 @@
+datasource:
+  workspace: tourguides
+  namespaces:
+    mt: https://www.magnolia-cms.com/jcr/mgnl
+  autoCreate: true
+
+model:
+  nodeType: mt:tourGuide
+  properties:
+    - name: name
+      type: String
+      required: true
+    - name: birthday
+      type: Date
+    - name: gender
+      options:
+        - value: female
+          label: Female
+        - value: male
+          label: Male
+        - value: other
+          label: Other
+    - name: shortBio
+      type: richText

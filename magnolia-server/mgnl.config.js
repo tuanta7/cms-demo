@@ -31,7 +31,7 @@ export default {
 		new CreateVirtualUriPlugin(),
 		new CreateContentTypePlugin(),
 		new CreateAppPlugin({
-			lightModule: 'common',
+			lightModule: 'content-type-examples',
 		}),
 		new CreateLightModulePlugin({}),
 		new StartPlugin({

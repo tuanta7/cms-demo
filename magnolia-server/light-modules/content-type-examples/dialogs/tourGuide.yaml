@@ -1,0 +1,6 @@
+form:
+  properties:
+    birthday:
+      $type: dateField
+      clientConfig:
+        min: "1900-01-01"
