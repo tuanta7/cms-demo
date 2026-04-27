@@ -25,9 +25,10 @@ A Magnolia light module is a file and folder-based module. It can define every M
 - **Assets**:
 - **Resources**: Resource files are static Web resources (CSS, JavaScript), definition files for apps, dialogs and templates (YAML), and template scripts (FreeMarker).
 
-## Official Tutorials
+## Official Tutorials (v6.4)
 
 - Hello Magnolia: [Link](https://docs.magnolia-cms.com/product-docs/6.2/getting-started-with-magnolia/hello-magnolia/)
-- Content Types tutorial: [Link](https://docs.magnolia-cms.com/product-docs/6.2/developing/content-types-tutorial/)
+- Hello Magnolia - with content via REST: [Link](https://docs.magnolia-cms.com/product-docs/6.2/developing/hello-magnolia---with-content-via-rest/)
+- Content Types tutorial: [Link](https://docs.magnolia-cms.com/product-docs/apps/developing-an-app/my-first-content-app/)
 
 mgnl create-component quotation -a pages/hello@main -lm hello-magnolia

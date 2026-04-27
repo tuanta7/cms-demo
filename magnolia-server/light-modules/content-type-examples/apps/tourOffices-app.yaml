@@ -1,0 +1,9 @@
+!content-type:tourOffice
+name: tourOffices-app
+#
+subApps:
+  detail:
+    form:
+      properties:
+        - name: address
+          rows: 5

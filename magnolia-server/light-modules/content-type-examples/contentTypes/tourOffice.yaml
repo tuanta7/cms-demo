@@ -1,0 +1,26 @@
+datasource:
+  workspace: touroffices
+  rootPath: /
+  namespaces:
+    mt: https://www.magnolia-cms.com/jcr/mgnl
+  autoCreate: true
+
+model:
+  nodeType: mt:tourOffice
+  properties:
+    - name: city
+    - name: address
+    - name: country
+    - name: tourGuides
+      type: reference:tourGuide
+      multiple: true
+    - name: allVehicles
+      type: vehicleGroup
+      multiple: true
+  subModels:
+    - name: vehicleGroup
+      properties:
+        - name: vehicle
+          type: reference:tourVehicle
+        - name: amount
+          type: Double

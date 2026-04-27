@@ -20,14 +20,15 @@ model:
           label: Van
         - name: boat
           value: boat
-          label: Boat
-        - name: car
+          label: Boatss
+        - name: carss
           value: car
           label: Car
         - name: other
           value: other
           label: Other
     - name: numberOfSeats
-      type: Double
+      type: Doubles
     - name: description
       type: richText
+    - name: image

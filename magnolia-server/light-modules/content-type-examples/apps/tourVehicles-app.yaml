@@ -1,0 +1,10 @@
+!content-type:tourVehicle
+name: tourVehicles-app
+#
+subApps:
+  detail:
+    form:
+      properties:
+        - name: image
+          label: Select image
+          $type: damLinkField
