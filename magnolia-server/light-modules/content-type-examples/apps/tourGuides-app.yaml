@@ -1,2 +1,11 @@
 !content-type:tourGuide
 name: tourGuides-app
+
+subApps:
+  detail:
+    form:
+      properties:
+        - name: birthday
+          $type: dateField
+          label: Birthday
+          dateFormat: MM/dd/yyyy

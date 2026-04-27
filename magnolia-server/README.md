@@ -19,16 +19,11 @@ Reference: [docs.magnolia-cms.com](https://docs.magnolia-cms.com/product-docs/mo
 
 A Magnolia light module is a file and folder-based module. It can define every Magnolia item which can be configured in YAML – such as apps, content types, templates, dialogs, themes, and others. It can also contain a lightweight YAML-based module descriptor and web resources such as css and javascript files.
 
+### Maven Modules
+
 ## 2. Components
 
-- **Pages**:
-- **Assets**:
 - **Resources**: Resource files are static Web resources (CSS, JavaScript), definition files for apps, dialogs and templates (YAML), and template scripts (FreeMarker).
-
-## Official Tutorials (v6.4)
-
-- Hello Magnolia: [Link](https://docs.magnolia-cms.com/product-docs/6.2/getting-started-with-magnolia/hello-magnolia/)
-- Hello Magnolia - with content via REST: [Link](https://docs.magnolia-cms.com/product-docs/6.2/developing/hello-magnolia---with-content-via-rest/)
-- Content Types tutorial: [Link](https://docs.magnolia-cms.com/product-docs/apps/developing-an-app/my-first-content-app/)
+- **Content App**: An app is a UI extension point. Because content is at the heart of Magnolia, there is a specific framework subset dedicated to creating apps that manage content; apps created using this framework subset are referred to as content apps.
 
 mgnl create-component quotation -a pages/hello@main -lm hello-magnolia

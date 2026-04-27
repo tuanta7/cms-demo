@@ -1,8 +1,18 @@
 # Magnolia Introduction
 
-## 1. Create a Page
+## 1. Pages
 
-### Create a Light Module
+Reference: [List of apps: Pages-app](https://docs.magnolia-cms.com/product-docs/Apps/List-of-apps/Pages-app/)
+
+Magnolia has a built-in app called Page
+
+## 2. Light Module
+
+A light module is simply a directory on the file system that contains YAML definition files, FreeMarker template scripts, and other resource files of any type.
+
+```sh
+mgnl create-light-module [options]  # create a light module with an empty folder structure
+```
 
 | Concept      | Folder                | Purpose                                              |
 | ------------ | --------------------- | ---------------------------------------------------- |
@@ -12,11 +22,9 @@
 | Content Type | contentTypes/         | Schema/structure for custom content entities         |
 | Virtual URI  | virtualUriMappings/   | URL redirects/forwards independent of site hierarchy |
 
-A light module is simply a directory on the file system that contains YAML definition files, FreeMarker template scripts, and other resource files of any type.
+### 2.1. Pages & Components
 
-```sh
-mgnl create-light-module [options]  # create a light module with an empty folder structure
-```
+Reference: [Hello Magnolia Tutorial](https://docs.magnolia-cms.com/product-docs/6.2/getting-started-with-magnolia/hello-magnolia/)
 
 A page is a full-page template, which is the top-level rendering unit in Magnolia. It defines the overall layout of a web page. Each page template consists of two files:
 
@@ -32,6 +40,10 @@ mgnl create-page [options]          # create a headless or freemarker-based page
 mgnl create-component [options]     # create a headless or freemarker-based component
 ```
 
+### 2.2. Content Types & Apps
+
+Reference: [Content Types Tutorial](https://docs.magnolia-cms.com/product-docs/apps/developing-an-app/my-first-content-app/)
+
 An app is a backend admin UI tool that appears in the Magnolia App Launcher.
 
 - a
@@ -46,12 +58,16 @@ mgnl create-app [options]           # create an app in a light module
 mgnl create-content-type [options]  # create a content type in a light module
 ```
 
+### 2.3. REST Client
+
+Reference: [Hello Magnolia with content via REST](https://docs.magnolia-cms.com/product-docs/6.2/developing/hello-magnolia---with-content-via-rest/)
+
+### Appendix
+
 ```sh
 mgnl create-virtual-uri [options]   # create a virtual URI mapping in a light module
 ```
 
-## 2. Headless Preview (Next.js)
+## 3. Headless Preview (Next.js)
 
-## 3. SSO for User
-
-## 4. Database
+## 4. SSO for User
