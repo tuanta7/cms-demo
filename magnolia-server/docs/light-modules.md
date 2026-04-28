@@ -6,13 +6,14 @@ A light module is simply a directory on the file system that contains YAML defin
 mgnl create-light-module [options]  # create a light module with an empty folder structure
 ```
 
-| Concept      | Folder                | Purpose                                              |
-| ------------ | --------------------- | ---------------------------------------------------- |
-| Page         | templates/pages/      | Full-page layout template                            |
-| Component    | templates/components/ | Reusable content block inside a page area            |
-| App          | apps/                 | Backend admin UI in the App Launcher                 |
-| Content Type | contentTypes/         | Schema/structure for custom content entities         |
-| Virtual URI  | virtualUriMappings/   | URL redirects/forwards independent of site hierarchy |
+| Concept      | Folder                | Purpose                                                                |
+| ------------ | --------------------- | ---------------------------------------------------------------------- |
+| Decoration   | decoration/           | Override or extend runtime configuration that comes from other modules |
+| Page         | templates/pages/      | Full-page layout template                                              |
+| Component    | templates/components/ | Reusable content block inside a page area                              |
+| App          | apps/                 | Backend admin UI in the App Launcher                                   |
+| Content Type | contentTypes/         | Schema/structure for custom content entities                           |
+| Virtual URI  | virtualUriMappings/   | URL redirects/forwards independent of site hierarchy                   |
 
 ## 1. Pages & Components Template
 
@@ -54,9 +55,20 @@ mgnl create-content-type [options]  # create a content type in a light module
 
 Reference: [Hello Magnolia with content via REST](https://docs.magnolia-cms.com/product-docs/6.2/developing/hello-magnolia---with-content-via-rest/)
 
-## 4. Appendix
+## 4. REST Endpoint
+
+Reference: [Getting started with REST](https://docs.magnolia-cms.com/product-docs/getting-started-with-magnolia/getting-started-with-rest)
+
+REST endpoints enable other software to get real, raw content directly from Magnolia. 
+
+## 5. Appendix
+
+### 5.1. Decoration
+
+Reference: [App Launcher layout definition](https://docs.magnolia-cms.com/product-docs/administration/app-launcher/app-launcher-layout/#_example_definitions)
+
+### 5.2. Virtual URI
 
 ```sh
 mgnl create-virtual-uri [options]   # create a virtual URI mapping in a light module
 ```
-

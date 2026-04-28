@@ -26,7 +26,7 @@ A Magnolia light module is a file and folder-based module. It can define every M
 
 ## 3. Magnolia Built-in Apps
 
-### Pages
+### ✨ Pages App
 
 Reference: [Pages app](https://docs.magnolia-cms.com/product-docs/Apps/List-of-apps/Pages-app/)
 
@@ -35,10 +35,16 @@ The Pages app allows users to build complete web pages.
 - In the Pages app, users enter content directly onto the page.
 - Content that comes from another Magnolia app can also be rendered.
 
-### Assets
+### ✨ Assets App
 
 Referece: [Assets App](https://docs.magnolia-cms.com/product-docs/apps/list-of-apps/assets-app/)
 
 The Assets app is a container app for asset management subapps such as the Magnolia Assets subapp, Amazon S3 Assets, or Bynder.
 
 - Magnolia Assets subapp is a Magnolia-native solution for simple Digital Asset Management (DAM) scenarios.
+
+### ✨ Categories App
+
+### ✨ Stories App
+
+(Available only in DX Core)
