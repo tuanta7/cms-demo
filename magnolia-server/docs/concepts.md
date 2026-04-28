@@ -19,6 +19,8 @@ A Magnolia light module is a file and folder-based module. It can define every M
 
 ## 2. Key Concepts
 
+- **Workspace**: Magnolia stores content in the magnolia repository. The repository is further divided into workspaces.
+- **Namespace**: The namespace indicates a certain domain. Node types that belong to the same domain share the same namespace. The namespace nt is used for node types provided by the JCR implementation, mgnl is the namespace for most of the Magnolia-specific node types.
 - **Resources**: Resource files are static Web resources (CSS, JavaScript), definition files for apps, dialogs and templates (YAML), and template scripts (FreeMarker).
 - **Content App**: An app is a UI extension point. Because content is at the heart of Magnolia, there is a specific framework subset dedicated to creating apps that manage content; apps created using this framework subset are referred to as content apps.
 - **App Descriptor**: An app descriptor describes an app. The descriptor assigns the app a name, icon and implementation class. The name of the app content node must be unique as it is used to refer to the app across the system.

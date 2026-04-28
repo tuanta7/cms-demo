@@ -20,3 +20,7 @@ Reference: [Magnolia Architecture](https://docs.magnolia-cms.com/product-docs/ad
 - **DAM**:
 
 ## 2. Headless CMS
+
+## 3. Multicluster Environments
+
+## 4.
