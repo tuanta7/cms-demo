@@ -1,12 +1,4 @@
-# Magnolia Introduction
-
-## 1. Pages
-
-Reference: [List of apps: Pages-app](https://docs.magnolia-cms.com/product-docs/Apps/List-of-apps/Pages-app/)
-
-Magnolia has a built-in app called Page
-
-## 2. Light Module
+# Light Module
 
 A light module is simply a directory on the file system that contains YAML definition files, FreeMarker template scripts, and other resource files of any type.
 
@@ -22,7 +14,7 @@ mgnl create-light-module [options]  # create a light module with an empty folder
 | Content Type | contentTypes/         | Schema/structure for custom content entities         |
 | Virtual URI  | virtualUriMappings/   | URL redirects/forwards independent of site hierarchy |
 
-### 2.1. Pages & Components
+## 1. Pages & Components Template
 
 Reference: [Hello Magnolia Tutorial](https://docs.magnolia-cms.com/product-docs/6.2/getting-started-with-magnolia/hello-magnolia/)
 
@@ -40,14 +32,14 @@ mgnl create-page [options]          # create a headless or freemarker-based page
 mgnl create-component [options]     # create a headless or freemarker-based component
 ```
 
-### 2.2. Content Types & Apps
+## 2. Content Types & Apps
 
 Reference: [Content Types Tutorial](https://docs.magnolia-cms.com/product-docs/apps/developing-an-app/my-first-content-app/)
 
 An app is a backend admin UI tool that appears in the Magnolia App Launcher.
 
-- a
-- b
+- A Content app is a specialized app type for managing structured content.
+- The content app user interface consists of a browser subapp and one or more detail subapps.
 
 A content type defines the structure/schema of a custom content entity (like a Product, Event, or Article). A content type establishes a new content type template for structured and consistent content entry across various apps and pages.
 
@@ -58,16 +50,13 @@ mgnl create-app [options]           # create an app in a light module
 mgnl create-content-type [options]  # create a content type in a light module
 ```
 
-### 2.3. REST Client
+## 3. REST Client
 
 Reference: [Hello Magnolia with content via REST](https://docs.magnolia-cms.com/product-docs/6.2/developing/hello-magnolia---with-content-via-rest/)
 
-### Appendix
+## 4. Appendix
 
 ```sh
 mgnl create-virtual-uri [options]   # create a virtual URI mapping in a light module
 ```
 
-## 3. Headless Preview (Next.js)
-
-## 4. SSO for User
