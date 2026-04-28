@@ -8,7 +8,7 @@ mgnl create-light-module [options]  # create a light module with an empty folder
 
 | Concept      | Folder                | Purpose                                                                |
 | ------------ | --------------------- | ---------------------------------------------------------------------- |
-| Decoration   | decoration/           | Override or extend runtime configuration that comes from other modules |
+| Decoration   | decorations/          | Override or extend runtime configuration that comes from other modules |
 | Page         | templates/pages/      | Full-page layout template                                              |
 | Component    | templates/components/ | Reusable content block inside a page area                              |
 | App          | apps/                 | Backend admin UI in the App Launcher                                   |
@@ -59,7 +59,7 @@ Reference: [Hello Magnolia with content via REST](https://docs.magnolia-cms.com/
 
 Reference: [Getting started with REST](https://docs.magnolia-cms.com/product-docs/getting-started-with-magnolia/getting-started-with-rest)
 
-REST endpoints enable other software to get real, raw content directly from Magnolia. 
+REST endpoints enable other software to get real, raw content directly from Magnolia.
 
 ## 5. Appendix
 

@@ -1,0 +1,16 @@
+layout:
+  defaultGroup: custom
+  groups:
+    - name: travel
+      label: Travel
+      apps:
+        - name: tourGuides-app
+        - name: tourOffices-app
+        - name: tourVehicles-app
+  rows:
+    - name: one
+      cssClass: editor
+      groups:
+        content: content
+        marketing: marketing
+        travel: travel
