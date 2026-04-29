@@ -1,0 +1,32 @@
+actions:
+  review:
+    availability:
+      access:
+        roles:
+          superuser: superuser
+  claim:
+    availability:
+      access:
+        roles:
+          superuser: superuser
+  approve:
+    availability:
+      access:
+        roles:
+          superuser: superuser
+  confirmRejection:
+    availability:
+      access:
+        roles:
+          superuser: superuser
+  retry:
+    availability:
+      access:
+        roles:
+          superuser: superuser
+  abort:
+    availability:
+      access:
+        roles:
+          developer: developer
+          superuser: superuser

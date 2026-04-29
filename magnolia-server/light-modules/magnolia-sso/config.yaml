@@ -1,0 +1,4 @@
+# https://docs.magnolia-cms.com/magnolia-sso/#_configuring_via_yaml
+clients:
+  oidc.id: $OIDC_ID
+  oidc.secret: $OIDC_SECRET

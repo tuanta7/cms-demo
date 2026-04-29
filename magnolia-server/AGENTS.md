@@ -19,4 +19,4 @@ To start the server, use this command:
 npm start
 ```
 
-The `webapp-freemaker` module is intended for FreeMarker-based rendering, while `webapp-headless` is used for headless integration with an external Next.js application. These two modules are used to build a travel agency page.
+The `webapp-freemaker` module is intended for FreeMarker-based rendering, while `webapp-headless` is used for headless integration with an external Next.js application. These two modules are used to build a clone of `manutd.com` page.

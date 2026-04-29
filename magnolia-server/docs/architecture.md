@@ -23,4 +23,4 @@ Reference: [Magnolia Architecture](https://docs.magnolia-cms.com/product-docs/ad
 
 ## 3. Multicluster Environments
 
-## 4.
+## 4. 
