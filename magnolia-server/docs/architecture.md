@@ -16,11 +16,11 @@ Reference: [Magnolia Architecture](https://docs.magnolia-cms.com/product-docs/ad
 - **Magnolia Nexus**:
 - **Light Modules**:
 - **SPA**:
-- **JCR** (Java Content Repository): Apache Jackrabbit is a fully conforming implementation of the JCR API.
-- **DAM**:
+- **JCR** (Java Content Repository): The JCR specification defines an abstract model and a Java API for data storage and related services commonly used by content-oriented applications. Apache Jackrabbit is a fully conforming implementation of the JCR API.
+- **DAM** (Digital Asset Management): A common term for Magnolia modules that allow you to store and work with images, videos and documents. Assets stored in the DAM can be used anywhere in the system.
 
 ## 2. Headless CMS
 
 ## 3. Multicluster Environments
 
-## 4. 
+## 4.

@@ -19,6 +19,8 @@ A Magnolia light module is a file and folder-based module. It can define every M
 
 ## 2. Key Concepts
 
+More: [Glossary](https://docs.magnolia-cms.com/product-docs/getting-started-with-magnolia/glossary)
+
 **Resources**: Resource files are static Web resources (CSS, JavaScript), definition files for apps, dialogs and templates (YAML), and template scripts (FreeMarker).
 
 ### JCR Concepts (Content Type)
