@@ -57,9 +57,11 @@ Reference: [Hello Magnolia with content via REST](https://docs.magnolia-cms.com/
 
 ## 4. REST Endpoint
 
-Reference: [Getting started with REST](https://docs.magnolia-cms.com/product-docs/getting-started-with-magnolia/getting-started-with-rest)
+Reference: [Hello Magnolia - Headless](https://docs.magnolia-cms.com/product-docs/developing/headless/getting-started-with-magnolia-headless/hello-headless/)
 
 REST endpoints enable other software to get real, raw content directly from Magnolia.
+
+Read more: [Getting started with REST](https://docs.magnolia-cms.com/product-docs/getting-started-with-magnolia/getting-started-with-rest)
 
 ## 5. Appendix
 
