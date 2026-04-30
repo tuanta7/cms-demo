@@ -1,5 +1,0 @@
-# https://docs.magnolia-cms.com/magnolia-sso/#_configuring_via_yaml
-# https://manage.auth0.com/dashboard/jp/chasingx/applications/8OsZsYeUziz4PjcBaB40n0pR8z7Rpg1W/settings
-clients:
-  oidc.id: 8OsZsYeUziz4PjcBaB40n0pR8z7Rpg1W
-  oidc.secret: $OIDC_SECRET

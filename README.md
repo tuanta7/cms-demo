@@ -1,3 +1,5 @@
-# Simple CMS
+# Magnolia
 
-A simple headless CMS-driven landing page platform built with Strapi.
+Magnolia CMS and its ecosystem.
+
+## Tutorials (v6.4)
