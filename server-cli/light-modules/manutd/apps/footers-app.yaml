@@ -1,0 +1,27 @@
+!content-type:footer
+name: footers-app
+label: Footers
+icon: icon-templating-app
+subApps:
+  detail:
+    form:
+      properties:
+        - name: name
+          $type: textField
+          label: Name
+        - name: channels
+          $type: jcrMultiField
+          label: Channels
+          field:
+            $type: compositeField
+            label: Channel
+            properties:
+              - name: name
+                $type: textField
+                label: Name
+              - name: link
+                $type: textField
+                label: Link
+              - name: icon
+                $type: damLinkField
+                label: Icon

@@ -1,0 +1,22 @@
+datasource:
+  workspace: footers
+  autoCreate: true
+
+model:
+  nodeType: mgnl:footer
+  properties:
+    - name: name
+      type: string
+    - name: channels
+      type: channel
+      multiple: true
+
+subModels:
+  channel:
+    properties:
+      - name: name
+        type: string
+      - name: link
+        type: string
+      - name: icon
+        type: string

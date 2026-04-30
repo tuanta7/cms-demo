@@ -1,0 +1,24 @@
+title: Manchester United Home Page
+routeTemplate: "{{path}}"
+class: info.magnolia.rendering.spa.renderer.SiteAwareSpaRenderableDefinition
+dialog: manutd:pages/home
+
+areas:
+  header:
+    type: single
+    title: Header Area
+    availableComponents:
+      html:
+        id: mtk2:components/html
+  content:
+    type: list
+    title: Content Area
+    availableComponents:
+      html:
+        id: mtk2:components/html
+  footer:
+    type: single
+    title: Footer Area
+    availableComponents:
+      footer:
+        id: manutd:components/footer

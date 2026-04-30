@@ -1,0 +1,17 @@
+label: Footer
+form:
+  properties:
+    description:
+      label: Description
+      $type: staticField
+      value: Add Footer into the content page
+    footer:
+      label: Footer
+      $type: pageLinkField
+      i18n: false
+      placeholder: Select a footer
+      textInputAllowed: false
+      required: true
+      chooser:
+        workbenchChooser:
+          appName: footers-app
