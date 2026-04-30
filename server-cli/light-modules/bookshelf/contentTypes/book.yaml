@@ -1,0 +1,19 @@
+datasource:
+  $type: jcrContentTypeDatasource
+  workspace: books
+  namespaces:
+    lib: https://www.magnolia-travel.com/jcr/1.0/lib
+  autoCreate: true
+
+model:
+  nodeType: lib:book
+  properties:
+    - name: authors # default type is string
+    - name: editorial
+      type: Boolean
+    - name: title
+    - name: description
+    - name: publisher
+    - name: publish_date
+      type: Date
+    - name: isbn13

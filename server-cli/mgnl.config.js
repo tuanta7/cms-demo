@@ -6,7 +6,7 @@ import CreateAppPlugin from "@magnolia/cli-create-app-plugin";
 import CreateLightModulePlugin from "@magnolia/cli-create-light-module-plugin";
 import StartPlugin from "@magnolia/cli-start-plugin";
 export default {
-  lightModule: "web-headless",
+  lightModule: "manutd",
   analytics: {
     enabled: true,
     // Set to false to turn off analytics
@@ -31,7 +31,7 @@ export default {
     new CreateVirtualUriPlugin(),
     new CreateContentTypePlugin(),
     new CreateAppPlugin({
-      lightModule: "content-type-examples",
+      lightModule: "books",
     }),
     new CreateLightModulePlugin({}),
     new StartPlugin({

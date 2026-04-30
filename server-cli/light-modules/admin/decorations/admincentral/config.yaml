@@ -1,6 +1,13 @@
 layout:
   defaultGroup: custom
   groups:
+    - name: content
+      apps:
+        - name: pages-app
+        - name: dam
+        - name: stories
+        - name: tours
+        - name: books-app
     - name: travel
       label: Travel
       apps:

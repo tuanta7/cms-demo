@@ -1,0 +1,22 @@
+!content-type:book
+name: books-app
+icon: icon-documents-app # https://dev.magnolia-cms.com/svg-app-icons-gallery/
+subApps:
+  detail:
+    form:
+      properties:
+        editorial:
+          $type: checkBoxField
+        title:
+          rows: 2
+        description:
+          rows: 5
+          maxLength: 5000
+        publish_date:
+          $type: dateField
+        isbn13:
+          maxLength: 13
+          validators:
+            - name: isbn13
+              $type: regexpValidator
+              pattern: '97(8|9)[0-9]{9}(\d|X)'
