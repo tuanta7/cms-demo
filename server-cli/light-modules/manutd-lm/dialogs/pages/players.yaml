@@ -1,0 +1,6 @@
+label: Players Page
+form:
+  properties:
+    title:
+      label: Title
+      $type: textField

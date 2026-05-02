@@ -1,0 +1,22 @@
+name: manutd
+
+domains:
+  - localhost
+
+mappings:
+  website:
+    URIPrefix: ""
+    handlePrefix: /manutd
+    repository: website
+
+templates:
+  pages:
+    home:
+      id: manutd:pages/home
+    players:
+      id: manutd:pages/players
+
+i18n:
+  class: info.magnolia.cms.i18n.DefaultI18nContentSupport
+  enabled: true
+  fallbackLocale: en

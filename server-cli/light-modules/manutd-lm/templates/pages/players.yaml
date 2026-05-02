@@ -1,0 +1,14 @@
+title: ManUtd Players
+routeTemplate: "{{@path}}"
+dialog: manutd-lm:pages/players
+
+renderType: site-spa
+class: info.magnolia.rendering.spa.renderer.SiteAwareSpaRenderableDefinition
+
+areas:
+  content:
+    type: list
+    title: Content Area
+    availableComponents:
+      html:
+        id: mtk2:components/html

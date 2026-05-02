@@ -1,0 +1,17 @@
+label: Post
+form:
+  properties:
+    description:
+      label: Description
+      $type: staticField
+      value: Add a post entry into the content page
+    post:
+      label: Post
+      $type: pageLinkField
+      i18n: false
+      placeholder: Select a post
+      textInputAllowed: false
+      required: true
+      chooser:
+        workbenchChooser:
+          appName: posts-app

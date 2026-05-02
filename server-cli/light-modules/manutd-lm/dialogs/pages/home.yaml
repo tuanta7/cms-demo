@@ -1,0 +1,31 @@
+label: Home Page
+form:
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: tabMain
+        fields:
+          - name: title
+          - name: footer
+      - name: tabMeta
+        fields:
+          - name: meta
+  properties:
+    title:
+      label: Title
+      $type: textField
+    meta:
+      label: Code
+      $type: codeField
+      language: html
+    footer:
+      $type: linkField
+      label: Footer
+      datasource:
+        $type: jcrDatasource
+        workspace: footers
+      chooser:
+        workbenchChooser:
+          appName: footers-app
+      converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter
+      textInputAllowed: false

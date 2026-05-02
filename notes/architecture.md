@@ -8,7 +8,7 @@ mgnl create-component quotation -a pages/hello@main -lm hello-magnolia
 
 ## 1. Architecture and Operation Models
 
-![arch](imgs/image.png)
+![arch](imgs/architecture.png)
 
 Reference: [Magnolia Architecture](https://docs.magnolia-cms.com/product-docs/administration/architecture/)
 

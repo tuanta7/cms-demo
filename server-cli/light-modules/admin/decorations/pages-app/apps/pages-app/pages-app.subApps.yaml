@@ -1,6 +1,6 @@
 browser:
   actions:
-    publish:
-      label: Submit for review
-    publishRecursive:
-      label: Submit for review incl. subpages
+    # publish:
+    #   label: Submit for review
+    # publishRecursive:
+    #   label: Submit for review incl. subpages

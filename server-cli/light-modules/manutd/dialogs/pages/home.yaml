@@ -1,4 +1,0 @@
-label: Page Properties
-form:
-  layout:
-    $type: tabbedLayout

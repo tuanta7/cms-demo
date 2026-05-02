@@ -1,24 +1,29 @@
-title: Manchester United Home Page
-routeTemplate: "{{path}}"
+title: ManUtd Home
+routeTemplate: "{{@path}}"
+dialog: manutd-lm:pages/home
+
+renderType: site-spa
 class: info.magnolia.rendering.spa.renderer.SiteAwareSpaRenderableDefinition
-dialog: manutd:pages/home
 
 areas:
   header:
+    renderType: spa
     type: single
     title: Header Area
     availableComponents:
       html:
         id: mtk2:components/html
   content:
+    renderType: spa
     type: list
     title: Content Area
     availableComponents:
       html:
         id: mtk2:components/html
   footer:
+    renderType: spa
     type: single
     title: Footer Area
     availableComponents:
       footer:
-        id: manutd:components/footer
+        id: manutd-lm:components/footer

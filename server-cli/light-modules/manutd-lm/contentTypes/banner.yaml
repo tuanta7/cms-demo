@@ -1,0 +1,3 @@
+datasource:
+  workspace: banners
+  autoCreate: true

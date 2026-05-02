@@ -1,0 +1,206 @@
+class: info.magnolia.rest.delivery.jcr.v2.JcrDeliveryEndpointDefinition
+workspace: website
+rootPath: /
+depth: 20
+limit: 100
+referenceDepth: 2
+
+personalized: true
+bypassWorkspaceAcls: true
+includeSystemProperties: false
+
+nodeTypes:
+  - mgnl:page
+childNodeTypes:
+  - mgnl:area
+  - mgnl:component
+  - mgnl:contentNode
+
+references:
+  - name: assetReference
+    propertyName: thumbnailImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: image
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: mobileImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: backgroundImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: mobileBackgroundImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: logoImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: cardImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: icon
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: prefixIcon
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: iconHover
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: referenceWithRichText
+    propertyName: richText
+    referenceResolver:
+      class: info.magnolia.rest.reference.link.RichTextLinkResolverDefinition
+  - name: contentAppReference
+    propertyName: imageModals
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: spg-imageModals
+  - name: contentAppReference
+    propertyName: floatingButton
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: spg-floatingButtons
+  - name: contentAppReference
+    propertyName: floatSidebar
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: products
+  - name: contentAppReference
+    propertyName: commonImports
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: spg-commonImports
+  - name: contentAppReference
+    propertyName: footer
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: footers
+  - name: categoryReference
+    propertyName: category
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: spg-getTags
+  - name: subcategoryReference
+    propertyName: subcategory
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: spg-getTags
+  - name: subcategoryImageReference
+    propertyName: subcategoryImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: cardreadMoreIconSuffixReference
+    propertyName: readMoreIconSuffix
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: getDesktopImageReference
+    propertyName: desktopImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: getMobileImageReference
+    propertyName: mobileImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: bottomImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: thumbnail
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: faqReference
+    propertyName: faqs
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: spg-faqs
+  - name: mytengahsgModalReference
+    propertyName: modal
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: mytengahsg-modal
+  - name: categoryReference
+    propertyName: category
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: category
+  - name: assetReference
+    propertyName: rightImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: mobileRightImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: partnerLogoImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: mobilePartnerLogoImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: categories
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: category
+  - name: assetReference
+    propertyName: field
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: category
+  - name: assetReference
+    propertyName: report
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: nav
+    propertyName: nav
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: spg-v2Navigations
+  - name: hoverImage
+    propertyName: hoverImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+      expand: false
+  - name: assetReference
+    propertyName: logo
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: categoryReference
+    propertyName: faqCategory
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: category
+  - name: assetReference
+    propertyName: appStoreImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: playStoreImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: prevArrow
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: nextArrow
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+  - name: assetReference
+    propertyName: source
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
