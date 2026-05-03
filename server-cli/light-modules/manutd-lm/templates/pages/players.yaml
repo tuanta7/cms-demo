@@ -1,6 +1,7 @@
 title: ManUtd Players
 routeTemplate: "{{@path}}"
 dialog: manutd-lm:pages/players
+visible: true
 
 renderType: site-spa
 class: info.magnolia.rendering.spa.renderer.SiteAwareSpaRenderableDefinition
@@ -10,5 +11,5 @@ areas:
     type: list
     title: Content Area
     availableComponents:
-      html:
-        id: mtk2:components/html
+      code:
+        id: manutd-lm:components/code

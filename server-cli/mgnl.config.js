@@ -6,7 +6,7 @@ import CreateAppPlugin from "@magnolia/cli-create-app-plugin";
 import CreateLightModulePlugin from "@magnolia/cli-create-light-module-plugin";
 import StartPlugin from "@magnolia/cli-start-plugin";
 export default {
-  lightModule: "manutd",
+  lightModule: "manutd-lm",
   analytics: {
     enabled: true,
     // Set to false to turn off analytics

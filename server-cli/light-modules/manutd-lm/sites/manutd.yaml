@@ -1,13 +1,7 @@
 name: manutd
 
 domains:
-  - localhost
-
-rendering:
-  spa:
-    enabled: true
-    appName: nextjs
-    baseUrl: http://localhost:3000
+  - name: localhost
 
 mappings:
   website:
@@ -16,11 +10,14 @@ mappings:
     repository: website
 
 templates:
-  pages:
-    home:
-      id: manutd:pages/home
-    players:
-      id: manutd:pages/players
+  availability:
+    templates:
+      hello:
+        id: hello-magnolia:pages/hello
+      home:
+        id: manutd-lm:pages/home
+      players:
+        id: manutd-lm:pages/players
 
 i18n:
   class: info.magnolia.cms.i18n.DefaultI18nContentSupport

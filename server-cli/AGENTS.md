@@ -19,4 +19,4 @@ To start the server, use this command:
 npm start
 ```
 
-The `manutd` module is used for headless integration with an external Next.js application to build a clone of [manutd.com](https://www.manutd.com/) page.
+The `manutd-lm` module is used for headless integration with an external Next.js application to build a clone of [manutd.com](https://www.manutd.com/) page.

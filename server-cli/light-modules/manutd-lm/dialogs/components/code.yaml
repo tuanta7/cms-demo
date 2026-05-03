@@ -1,0 +1,23 @@
+label: Code
+form:
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: html
+        label: HTML
+        fields:
+          - name: html
+      - name: css
+        label: CSS
+        fields:
+          - name: css
+  properties:
+    html:
+      label: HTML
+      $type: codeField
+      required: true
+      language: html
+    css:
+      label: CSS
+      $type: codeField
+      language: css

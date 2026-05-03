@@ -1,27 +1,25 @@
 title: ManUtd Home
 routeTemplate: "{{@path}}"
 dialog: manutd-lm:pages/home
+visible: true
 
 renderType: site-spa
 class: info.magnolia.rendering.spa.renderer.SiteAwareSpaRenderableDefinition
 
 areas:
   header:
-    renderType: spa
     type: single
     title: Header Area
     availableComponents:
-      html:
-        id: mtk2:components/html
+      code:
+        id: manutd-lm:components/code
   content:
-    renderType: spa
     type: list
     title: Content Area
     availableComponents:
-      html:
-        id: mtk2:components/html
+      code:
+        id: manutd-lm:components/code
   footer:
-    renderType: spa
     type: single
     title: Footer Area
     availableComponents:

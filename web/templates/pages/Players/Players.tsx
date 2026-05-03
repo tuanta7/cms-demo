@@ -1,6 +1,6 @@
 import { FooterArea } from "@/templates/components/FooterArea";
 
-const HomePage = () => {
+const PlayersPage = () => {
   return (
     <>
       <FooterArea />
@@ -8,4 +8,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default PlayersPage;
