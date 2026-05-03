@@ -3,6 +3,12 @@ name: manutd
 domains:
   - localhost
 
+rendering:
+  spa:
+    enabled: true
+    appName: nextjs
+    baseUrl: http://localhost:3000
+
 mappings:
   website:
     URIPrefix: ""

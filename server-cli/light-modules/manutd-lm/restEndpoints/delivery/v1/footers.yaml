@@ -1,17 +1,15 @@
 class: info.magnolia.rest.delivery.jcr.v2.JcrDeliveryEndpointDefinition
-workspace: website
+workspace: footers
 rootPath: /
-depth: 20
-limit: 100
-referenceDepth: 2
+depth: 10
+limit: 10
+referenceDepth: 3
 
 personalized: true
-bypassWorkspaceAcls: false
+bypassWorkspaceAcls: true # dev
 includeSystemProperties: false
 
 nodeTypes:
-  - mgnl:page
+  - mgnl:footer
 childNodeTypes:
-  - mgnl:area
-  - mgnl:component
   - mgnl:contentNode

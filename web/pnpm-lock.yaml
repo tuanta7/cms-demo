@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@magnolia/react-editor':
+        specifier: ^2.1.1
+        version: 2.1.1(@magnolia/frontend-helpers-base@1.2.0(prop-types@15.8.1))(classnames@2.5.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       next:
         specifier: 16.2.4
         version: 16.2.4(@babel/core@7.29.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -351,6 +354,24 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@magnolia/frontend-helpers-base@1.2.0':
+    resolution: {integrity: sha512-qmDPw38PmedXPHeRzSWFzPXpf4MHD9c2TVa1tTNrsk9cVMNjjzT0WIRzyfFQsWMCgB8A+N14xIH+i2DelhuacQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      prop-types: ^15.8.1
+    peerDependenciesMeta:
+      prop-types:
+        optional: true
+
+  '@magnolia/react-editor@2.1.1':
+    resolution: {integrity: sha512-2VJrmG7fyPoILREtIw1G1iiziGWBuqyivgov7F0diK5jr7Rydu5mNB52HJaErwYnApG5+8RTYUKq6RKQXg5gfQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@magnolia/frontend-helpers-base': ^1.1.1
+      classnames: ^2.5.1
+      react: ^18.3.1 || ~19.0.1 || ~19.1.2 || ^19.2.1
+      react-dom: ^18.3.1 || ~19.0.1 || ~19.1.2 || ^19.2.1
 
   '@napi-rs/wasm-runtime@0.2.12':
     resolution: {integrity: sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==}
@@ -837,6 +858,9 @@ packages:
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
+
+  classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
 
   client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
@@ -2252,6 +2276,17 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
+  '@magnolia/frontend-helpers-base@1.2.0(prop-types@15.8.1)':
+    optionalDependencies:
+      prop-types: 15.8.1
+
+  '@magnolia/react-editor@2.1.1(@magnolia/frontend-helpers-base@1.2.0(prop-types@15.8.1))(classnames@2.5.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@magnolia/frontend-helpers-base': 1.2.0(prop-types@15.8.1)
+      classnames: 2.5.1
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
   '@napi-rs/wasm-runtime@0.2.12':
     dependencies:
       '@emnapi/core': 1.10.0
@@ -2703,6 +2738,8 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+
+  classnames@2.5.1: {}
 
   client-only@0.0.1: {}
 
