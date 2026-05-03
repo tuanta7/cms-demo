@@ -1,7 +1,31 @@
-import { FooterProps } from "./types";
+import { getAssetUrl } from "@/lib/magnolia/assets";
+import { FooterChannel } from "./FooterChannel";
 
-const Footer = (props: FooterProps) => {
-  return <footer></footer>;
+const Footer = ({ footer }: FooterProps) => {
+  return (
+    <footer className="bg-gray-900 px-6 py-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        {footer.channels["@nodes"].map((ch) => {
+          const channel = footer.channels[ch];
+          return (
+            <FooterChannel
+              key={channel["@name"]}
+              link={channel.link}
+              iconLink={getAssetUrl(channel.icon)}
+            />
+          );
+        })}
+        <div className="flex items-center gap-4">
+          <button className="px-5 py-2 rounded-full border border-gray-500 text-white hover:bg-gray-700 transition">
+            LOG IN
+          </button>
+          <button className="px-5 py-2 rounded-full bg-red-600 text-white hover:bg-red-500 transition">
+            SIGN UP
+          </button>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

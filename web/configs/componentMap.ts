@@ -1,7 +1,10 @@
-import { Footer } from "@/components";
+import { Footer, Code } from "@/components";
 
 const LM_COMPONENT_PREFIX = "manutd-lm:components/";
 
-export const componentMap = {
-  [LM_COMPONENT_PREFIX + "footer"]: () => Footer,
+const componentMap = {
+  [LM_COMPONENT_PREFIX + "footer"]: Footer,
+  [LM_COMPONENT_PREFIX + "code"]: Code,
 };
+
+export default componentMap;
