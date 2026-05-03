@@ -1,0 +1,3 @@
+# TODO: find a way to use this file
+baseUrl: http://localhost:3000
+routeTemplate: "{{@path}}"
