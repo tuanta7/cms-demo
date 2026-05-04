@@ -1,4 +1,4 @@
-# Magnolia + CMS
+# Magnolia + NextJS
 
 ## 1. Exposing Content
 
