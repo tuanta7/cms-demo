@@ -3,12 +3,6 @@ name: manutd
 domains:
   - name: localhost
 
-mappings:
-  website:
-    URIPrefix: ""
-    handlePrefix: /manutd
-    repository: website
-
 templates:
   availability:
     templates:
@@ -19,7 +13,19 @@ templates:
       players:
         id: manutd-lm:pages/players
 
+mappings:
+  manutd:
+    URIPrefix: /
+    handlePrefix: /manutd
+    repository: website
+
+cors:
+  manutd:
+    allowedMethods:
+      GET: GET
+
 i18n:
   class: info.magnolia.cms.i18n.DefaultI18nContentSupport
   enabled: true
   fallbackLocale: en
+

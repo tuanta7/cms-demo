@@ -1,13 +1,17 @@
 class: info.magnolia.rest.delivery.jcr.v2.JcrDeliveryEndpointDefinition
 workspace: footers
-rootPath: /
 depth: 10
 limit: 10
 referenceDepth: 3
-
+bypassWorkspaceAcls: true
 personalized: true
-bypassWorkspaceAcls: true # dev
-includeSystemProperties: false
+
+systemProperties:
+  - mgnl:lastModified
+  - mgnl:lastModifiedBy
+  - mgnl:createdBy
+  - mgnl:created
+  - mgnl:template
 
 nodeTypes:
   - mgnl:footer

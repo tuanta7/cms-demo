@@ -1,18 +1,15 @@
-# Fallback pages endpoint
 class: info.magnolia.rest.delivery.jcr.v2.JcrDeliveryEndpointDefinition
 workspace: website
+rootPath: /
 depth: 20
 limit: 100
-referenceDepth: 2
+referenceDepth: 3
 bypassWorkspaceAcls: true
 personalized: true
 
 systemProperties:
-  - mgnl:lastModified
-  - mgnl:lastModifiedBy
-  - mgnl:createdBy
-  - mgnl:created
   - mgnl:template
+  # - mgnl:createdBy
 
 nodeTypes:
   - mgnl:page
@@ -20,3 +17,10 @@ childNodeTypes:
   - mgnl:area
   - mgnl:component
   - mgnl:contentNode
+
+references:
+  - name: footerReference
+    propertyName: footer
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: footers

@@ -167,3 +167,4 @@ dist
 .agents/
 .codex/
 .vscode/
+.idea/
