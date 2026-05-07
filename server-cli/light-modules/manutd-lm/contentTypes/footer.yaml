@@ -10,13 +10,12 @@ model:
     - name: channels
       type: channel
       multiple: true
-
-subModels:
-  channel:
-    properties:
-      - name: name
-        type: string
-      - name: link
-        type: string
-      - name: icon
-        type: string
+  subModels:
+    channel:
+      properties:
+        - name: name
+          type: string
+        - name: link
+          type: string
+        - name: icon
+          type: asset

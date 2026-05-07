@@ -3,17 +3,17 @@ workspace: footers
 depth: 10
 limit: 10
 referenceDepth: 3
-bypassWorkspaceAcls: true
-personalized: true
 
 systemProperties:
   - mgnl:lastModified
   - mgnl:lastModifiedBy
-  - mgnl:createdBy
-  - mgnl:created
   - mgnl:template
 
 nodeTypes:
   - mgnl:footer
-childNodeTypes:
-  - mgnl:contentNode
+
+references:
+  - name: iconReference
+    propertyName: icon
+    referenceResolver:
+      $type: assetReferenceResolver
