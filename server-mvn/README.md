@@ -1,4 +1,4 @@
-# Setup Notes
+# Setup Notes for Magnolia v6.2
 
 Reference: [Maven setup](https://docs.magnolia-cms.com/product-docs/developing/development-environment/maven/)
 
