@@ -18,7 +18,7 @@ form:
       label: Code
       $type: codeField
       language: html
-    footer:
+    footer: # This one is for the reference a footer data, not a componen, so there is no mgnl:template
       $type: linkField
       label: Footer
       datasource:
@@ -28,5 +28,5 @@ form:
         workbenchChooser:
           appName: footers-app
       textInputAllowed: false
-      converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter
+      converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter # For easier manual fetch
       #converterClass: info.magnolia.ui.editor.converter.JcrNodeToIdentifierConverter

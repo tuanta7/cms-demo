@@ -16,7 +16,7 @@ childNodeTypes:
   - mgnl:area
   - mgnl:component
   - mgnl:contentNode
-  - mgnl:footer
+  # - mgnl:footer
 
 references:
   # - name: footerReference

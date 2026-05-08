@@ -20,7 +20,7 @@ areas:
     availableComponents:
       code:
         id: manutd-lm:components/code
-  footer:
+  footer: # This one is a component reference
     type: single
     title: Footer Area
     availableComponents:
