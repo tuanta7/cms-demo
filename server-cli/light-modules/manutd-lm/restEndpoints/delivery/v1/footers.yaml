@@ -3,12 +3,6 @@ workspace: footers
 depth: 10
 limit: 10
 referenceDepth: 3
-
-systemProperties:
-  - mgnl:lastModified
-  - mgnl:lastModifiedBy
-  - mgnl:template
-
 nodeTypes:
   - mgnl:footer
 

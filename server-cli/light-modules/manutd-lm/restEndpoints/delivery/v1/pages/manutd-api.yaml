@@ -4,6 +4,7 @@ rootPath: /
 depth: 10
 limit: 10
 referenceDepth: 3
+includeSystemProperties: true
 
 systemProperties:
   - mgnl:template
@@ -18,11 +19,11 @@ childNodeTypes:
   - mgnl:footer
 
 references:
-  - name: footerReference
-    propertyName: footer
-    referenceResolver:
-      $type: jcrReferenceResolver
-      targetWorkspace: footers
+  # - name: footerReference
+  #   propertyName: footer
+  #   referenceResolver:
+  #     $type: jcrReferenceResolver
+  #     targetWorkspace: footers
   - name: iconReference
     propertyName: icon
     referenceResolver:

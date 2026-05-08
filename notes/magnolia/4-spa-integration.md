@@ -47,6 +47,10 @@ childNodeTypes:
 
 Read more: [How to get content as JSON](https://docs.magnolia-cms.com/product-docs/developing/development-how-tos/how-to-get-content-as-json-an-overview/)
 
+### System Properties
+
+Only page and component templates have the `mgnl:template` property, which is used by the SDK.
+
 ### Resolving References
 
 Reference: [Properties for resolving references](https://docs.magnolia-cms.com/rest/api/delivery-endpoint/#_properties_for_resolving_references)
