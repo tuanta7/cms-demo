@@ -1,17 +1,17 @@
-import { getAssetUrl } from "@/lib/magnolia/assets";
+import { getAssetUrlFromPath } from "@/lib/magnolia/assets";
 import { FooterChannel } from "./FooterChannel";
 
 const Footer = ({ footer }: FooterProps) => {
   return (
     <footer className="bg-gray-900 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {footer.channels["@nodes"].map((ch) => {
+        {footer.channels["@nodes"]?.map((ch) => {
           const channel = footer.channels[ch];
           return (
             <FooterChannel
               key={channel["@name"]}
               link={channel.link}
-              iconLink={getAssetUrl(channel.icon)}
+              iconLink={getAssetUrlFromPath(channel.icon)}
             />
           );
         })}

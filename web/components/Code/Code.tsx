@@ -1,16 +1,19 @@
 export interface CodeProps {
   html: string;
   style?: string;
+  nonce?: string;
 }
 
-const Code = ({ html, style }: CodeProps) => {
+const Code = ({ html, style, nonce }: CodeProps) => {
   if (!html) {
     return <p>No code provided</p>;
   }
 
   return (
     <>
-      {style && <style dangerouslySetInnerHTML={{ __html: style }} />}
+      {style && (
+        <style nonce={nonce} dangerouslySetInnerHTML={{ __html: style }} />
+      )}
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </>
   );
