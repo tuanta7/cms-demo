@@ -1,6 +1,6 @@
-declare type FooterChannelType = Mgnl & {
+declare type FooterChannelType = NodeType & {
   link: string;
-  icon: string;
+  icon: NodeType;
   name: string;
 };
 

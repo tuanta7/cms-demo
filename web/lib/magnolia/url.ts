@@ -1,8 +1,8 @@
-import { PAGE_PREFIX } from "./contents";
+import { getMagnoliaPagePrefix } from "./env";
 
 const getRelativePath = (path: string): string => {
   if (!path) return path;
-  return path.replace(PAGE_PREFIX, "") || "/";
+  return path.replace(getMagnoliaPagePrefix(), "") || "/";
 };
 
 export { getRelativePath };

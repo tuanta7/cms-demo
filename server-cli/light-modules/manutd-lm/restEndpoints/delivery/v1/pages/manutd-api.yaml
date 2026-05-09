@@ -3,12 +3,11 @@ workspace: website
 rootPath: /
 depth: 10
 limit: 10
-referenceDepth: 3
+referenceDepth: 2
 includeSystemProperties: true
 
 systemProperties:
   - mgnl:template
-  # - mgnl:createdBy
 
 nodeTypes:
   - mgnl:page
@@ -16,15 +15,3 @@ childNodeTypes:
   - mgnl:area
   - mgnl:component
   - mgnl:contentNode
-  # - mgnl:footer
-
-references:
-  # - name: footerReference
-  #   propertyName: footer
-  #   referenceResolver:
-  #     $type: jcrReferenceResolver
-  #     targetWorkspace: footers
-  - name: iconReference
-    propertyName: icon
-    referenceResolver:
-      $type: assetReferenceResolver

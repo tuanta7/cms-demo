@@ -3,9 +3,9 @@ import { componentMap, pageMap } from "@/configs";
 import { getPage, getTemplateAnnotations } from "@/lib/magnolia/contents";
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string[];
-  };
+  }>;
 };
 
 export default async function Page({ params }: Props) {

@@ -1,3 +1,5 @@
+declare module "@magnolia/react-editor";
+
 declare type NodeType = {
   "@id"?: string;
   "@name": string;

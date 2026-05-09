@@ -1,17 +1,29 @@
 import { FooterArea } from "@/templates/components/FooterArea";
 import { EditableArea } from "@magnolia/react-editor";
+import { getFooter } from "@/lib/magnolia/contents";
 
-const HomePage = ({
+type HomePageProps = PageType;
+
+const HomePage = async ({
   content,
   footer,
-}: {
-  content: NodeType;
-  footer?: FooterType;
-}) => {
+  customHeader,
+  customFooter,
+}: HomePageProps) => {
+  let footerProps = undefined;
+  if (footer) {
+    footerProps = await getFooter(footer);
+  }
+
   return (
     <>
+      <h1 className="text-3xl font-bold">Manchester United</h1>
+      <h2>Header</h2>
+      <EditableArea content={customHeader} />
+      <h2>Main Content</h2>
       <EditableArea content={content} />
-      <FooterArea isEditable={true} footer={footer} />
+      <h2>Footer</h2>
+      <FooterArea content={customFooter} footer={footerProps} />
     </>
   );
 };

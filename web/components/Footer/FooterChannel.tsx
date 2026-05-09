@@ -1,18 +1,20 @@
+import Image from "next/image";
+
 interface FooterChannelProps {
   link: string;
   iconLink: string;
 }
 
 export function FooterChannel({ link, iconLink }: FooterChannelProps) {
+  console.log(iconLink);
   return (
-    <button
-      onClick={(e) => {
-        e.preventDefault();
-        window.open(link, "_blank");
-      }}
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
       className="w-10 h-10 rounded-full bg-gray-700 text-white text-sm flex items-center justify-center hover:bg-gray-600 transition"
     >
-      {iconLink}
-    </button>
+      <Image src={iconLink} alt="Channel Icon" width={10} height={10} />
+    </a>
   );
 }

@@ -1,13 +1,14 @@
-import { MAGNOLIA_BASE_URL } from "./contents";
+import { getMagnoliaBaseUrl } from "./env";
 
-export function getAssetUrlFromPath(path: string) {
-  return `${MAGNOLIA_BASE_URL}/dam/${path}`;
-}
-
-export function getAssetUrlFromId(jcrId: string) {
-  if (!jcrId.startsWith("jcr:")) {
-    jcrId = "jcr:" + jcrId;
+export function getAssetUrl(path: string) {
+  if (path.startsWith("/")) {
+    return `${getMagnoliaBaseUrl()}/dam${path}`;
   }
 
-  return `${MAGNOLIA_BASE_URL}/dam/${jcrId}`;
+  // path is a UUID
+  if (!path.startsWith("jcr:")) {
+    path = "jcr:" + path;
+  }
+
+  return `${getMagnoliaBaseUrl()}/dam/${path}`;
 }

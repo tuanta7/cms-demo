@@ -6,8 +6,6 @@ domains:
 templates:
   availability:
     templates:
-      hello:
-        id: hello-magnolia:pages/hello
       home:
         id: manutd-lm:pages/home
       players:
@@ -15,8 +13,8 @@ templates:
 
 mappings:
   manutd:
-    URIPrefix: /
-    handlePrefix: /manutd
+    URIPrefix: "/"
+    handlePrefix: "/manutd"
     repository: website
 
 cors:
@@ -28,4 +26,3 @@ i18n:
   class: info.magnolia.cms.i18n.DefaultI18nContentSupport
   enabled: true
   fallbackLocale: en
-

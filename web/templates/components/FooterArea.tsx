@@ -2,14 +2,14 @@ import { Footer } from "@/components";
 import { EditableArea } from "@magnolia/react-editor";
 
 export const FooterArea = ({
-  isEditable,
+  content,
   footer,
 }: {
-  isEditable: boolean;
+  content: NodeType;
   footer?: FooterType;
 }) => {
-  if (isEditable || !footer) {
-    return <EditableArea />;
+  if (!footer) {
+    return <EditableArea content={content} />;
   }
 
   return <Footer footer={footer} />;

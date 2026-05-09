@@ -8,7 +8,7 @@ renderType: site-spa
 class: info.magnolia.rendering.spa.renderer.SiteAwareSpaRenderableDefinition
 
 areas:
-  header:
+  customHeader:
     type: single
     title: Header Area
     availableComponents:
@@ -20,9 +20,11 @@ areas:
     availableComponents:
       code:
         id: manutd-lm:components/code
-  footer: # This one is a component reference
+  customFooter: # This one is a component reference
     type: single
     title: Footer Area
     availableComponents:
       footer:
         id: manutd-lm:components/footer
+      code:
+        id: manutd-lm:components/code
