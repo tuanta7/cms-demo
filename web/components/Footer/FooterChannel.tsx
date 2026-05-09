@@ -14,7 +14,13 @@ export function FooterChannel({ link, iconLink }: FooterChannelProps) {
       rel="noopener noreferrer"
       className="w-10 h-10 rounded-full bg-gray-700 text-white text-sm flex items-center justify-center hover:bg-gray-600 transition"
     >
-      <Image src={iconLink} alt="Channel Icon" width={10} height={10} />
+      <Image
+        src={iconLink}
+        alt="Channel Icon"
+        width={10}
+        height={10}
+        style={{ height: "auto", width: "auto" }}
+      />
     </a>
   );
 }
