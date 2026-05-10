@@ -18,6 +18,10 @@ async function getTemplateAnnotations(
 ): Promise<TemplateAnnotationsType> {
   const url = `${environments.mgnlTemplates}${path}${search}`;
   const res = await fetch(url, {
+    headers: {
+      // Can anonymous get the areas data tho?
+      cookie: "JSESSIONID:",
+    },
     cache: "no-store",
   });
   if (!res.ok) {
