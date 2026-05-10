@@ -1,5 +1,3 @@
-"use client";
-
 import { IMagnoliaContext } from "@magnolia/frontend-helpers-base/types";
 import { EditablePage } from "@magnolia/react-editor";
 import config from "@/magnolia.config";
@@ -15,6 +13,10 @@ export default function MagnoliaPage({
   ctx,
   templateAnnotations,
 }: MagnoliaPageProps) {
+  console.log("Rendering MagnoliaPage with context:", ctx);
+  console.log("Page content:", page);
+  console.log("Template annotations:", templateAnnotations);
+
   return (
     <div
       className={ctx?.isMagnoliaEdit ? "disable-a-pointer-events grow" : "grow"}

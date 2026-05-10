@@ -6,6 +6,7 @@ routeTemplate: "{{@path}}"
 
 renderType: site-spa
 class: info.magnolia.rendering.spa.renderer.SiteAwareSpaRenderableDefinition
+$type: spaPageRenderableDefinition # Add this for SPA annotations
 
 areas:
   content:
@@ -14,3 +15,9 @@ areas:
     availableComponents:
       code:
         id: manutd-lm:components/code
+  # customArea:
+  #   type: single
+  #   title: Area
+  #   availableComponents:
+  #     code:
+  #       id: manutd-lm:components/code

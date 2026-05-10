@@ -1,12 +1,16 @@
-declare type ContentType = NodeType & {};
+declare type ContentType = NodeType & {
+  "0": NodeType;
+};
 
 declare type PageType = NodeType & {
   title?: string;
   content: ContentType;
   header?: string;
   footer?: string;
-  customHeader: NodeType;
-  customFooter: NodeType;
+  customHeader: ContentType;
+  customFooter: ContentType;
+  metadata: NodeType;
+  hidden?: boolean;
 };
 
 declare type PageProps = {

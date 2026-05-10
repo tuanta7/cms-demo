@@ -8,6 +8,7 @@ includeSystemProperties: true
 
 systemProperties:
   - mgnl:template
+  # - mgnl:createdBy
 
 nodeTypes:
   - mgnl:page

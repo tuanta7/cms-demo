@@ -1,7 +1,7 @@
 import { EditorContextService } from "@magnolia/frontend-helpers-base";
 import { getPage, getTemplateAnnotations } from "@/lib/magnolia/contents";
 import { environments } from "@/lib/environments/environments";
-import EditorRenderer from "./Renderer";
+import MagnoliaPage from "./MagnoliaPage";
 
 type Props = {
   params: Promise<{
@@ -9,6 +9,8 @@ type Props = {
   }>;
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
+
+export const dynamic = "force-dynamic";
 
 export default async function Page({ params, searchParams }: Props) {
   const { slug } = await params;
@@ -19,26 +21,20 @@ export default async function Page({ params, searchParams }: Props) {
       ? `?${new URLSearchParams(searchMap as Record<string, string>).toString()}`
       : "";
 
-  const ctx = EditorContextService.getMagnoliaContext(
+  const ctx = await EditorContextService.getMagnoliaContext(
     path + searchSring,
     environments.mgnlSitePath,
     environments.mgnlLanguages,
   );
 
-  console.log("Magnolia context:", ctx);
-
   const page = await getPage(path, ctx.search);
-
-  console.log("Fetched page content:", page);
 
   const templateAnnotations = ctx.isMagnolia
     ? await getTemplateAnnotations(path, ctx.search)
     : undefined;
 
-  console.log("Template annotations:", templateAnnotations);
-
   return (
-    <EditorRenderer
+    <MagnoliaPage
       page={page}
       ctx={ctx}
       templateAnnotations={templateAnnotations}

@@ -1,3 +1,5 @@
+"use client";
+
 import { EditableArea } from "@magnolia/react-editor";
 
 type PlayersPageProps = PageType;
