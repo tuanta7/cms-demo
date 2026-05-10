@@ -12,5 +12,6 @@ export const FooterArea = ({
     return <EditableArea content={content} />;
   }
 
-  return <Footer footer={footer} />;
+  const FooterView = () => <Footer footer={footer} />;
+  return <EditableArea content={content} customView={FooterView} />;
 };

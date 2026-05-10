@@ -6,7 +6,6 @@ interface FooterChannelProps {
 }
 
 export function FooterChannel({ link, iconLink }: FooterChannelProps) {
-  console.log(iconLink);
   return (
     <a
       href={link}
@@ -19,7 +18,7 @@ export function FooterChannel({ link, iconLink }: FooterChannelProps) {
         alt="Channel Icon"
         width={10}
         height={10}
-        style={{ height: "auto", width: "auto" }}
+        className="h-1/2 w-1/2 object-contain"
       />
     </a>
   );

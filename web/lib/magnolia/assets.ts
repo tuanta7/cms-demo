@@ -1,8 +1,8 @@
-import { getMagnoliaBaseUrl } from "./env";
+import { environments } from "../environments/environments";
 
 export function getAssetUrl(path: string) {
   if (path.startsWith("/")) {
-    return `${getMagnoliaBaseUrl()}/dam${path}`;
+    return `${environments.mgnlAssets}${path}`;
   }
 
   // path is a UUID
@@ -10,5 +10,5 @@ export function getAssetUrl(path: string) {
     path = "jcr:" + path;
   }
 
-  return `${getMagnoliaBaseUrl()}/dam/${path}`;
+  return `${environments.mgnlAssets}/${path}`;
 }

@@ -1,13 +1,7 @@
-import {
-  getMagnoliaBaseUrl,
-  getMagnoliaFootersEndpoint,
-  getMagnoliaPagePrefix,
-  getMagnoliaPagesEndpoint,
-  getMagnoliaTemplateAnnotationsEndpoint,
-} from "./env";
+import { environments } from "../environments/environments";
 
-async function getPage(path: string): Promise<PageType> {
-  const url = `${getMagnoliaBaseUrl()}${getMagnoliaPagesEndpoint()}${getMagnoliaPagePrefix()}${path}`;
+async function getPage(path: string, search = ""): Promise<PageType> {
+  const url = `${environments.mgnlPages}${path}${search}`;
   const res = await fetch(url, {
     cache: "no-store",
   });
@@ -20,8 +14,9 @@ async function getPage(path: string): Promise<PageType> {
 
 async function getTemplateAnnotations(
   path: string,
+  search = "",
 ): Promise<TemplateAnnotationsType> {
-  const url = `${getMagnoliaBaseUrl()}${getMagnoliaTemplateAnnotationsEndpoint()}${path}`;
+  const url = `${environments.mgnlTemplates}${path}${search}`;
   const res = await fetch(url, {
     cache: "no-store",
   });
@@ -32,8 +27,8 @@ async function getTemplateAnnotations(
   return await res.json();
 }
 
-async function getFooter(path: string): Promise<FooterType> {
-  const url = `${getMagnoliaBaseUrl()}${getMagnoliaFootersEndpoint()}${path}`;
+async function getFooter(path: string, search = ""): Promise<FooterType> {
+  const url = `${environments.mgnlFooters}${path}${search}`;
   const res = await fetch(url, {
     cache: "no-store",
   });

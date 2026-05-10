@@ -18,12 +18,24 @@ const HomePage = async ({
   return (
     <>
       <h1 className="text-3xl font-bold">Manchester United</h1>
-      <h2>Header</h2>
-      <EditableArea content={customHeader} />
-      <h2>Main Content</h2>
-      <EditableArea content={content} />
-      <h2>Footer</h2>
-      <FooterArea content={customFooter} footer={footerProps} />
+      {customHeader && (
+        <>
+          <h2>Header</h2>
+          <EditableArea content={customHeader} />
+        </>
+      )}
+      {content && (
+        <>
+          <h2>Main Content</h2>
+          <EditableArea content={content} />
+        </>
+      )}
+      {customFooter && (
+        <>
+          <h2>Footer</h2>
+          <FooterArea content={customFooter} footer={footerProps} />
+        </>
+      )}
     </>
   );
 };

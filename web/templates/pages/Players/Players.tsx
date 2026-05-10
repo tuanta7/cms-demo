@@ -1,9 +1,12 @@
-import { FooterArea } from "@/templates/components/FooterArea";
+import { EditableArea } from "@magnolia/react-editor";
 
-const PlayersPage = () => {
+type PlayersPageProps = PageType;
+
+const PlayersPage = ({ content }: PlayersPageProps) => {
   return (
     <>
-      <FooterArea />
+      <h1 className="text-3xl font-bold">Players</h1>
+      {content && <EditableArea content={content} />}
     </>
   );
 };
