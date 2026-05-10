@@ -12,4 +12,4 @@ declare type NodeType = {
 
 declare type TemplateAnnotationsType = {
   [key: string]: string;
-} | null;
+};
