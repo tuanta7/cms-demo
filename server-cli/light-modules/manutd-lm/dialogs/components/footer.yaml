@@ -7,16 +7,15 @@ form:
       value: Add Footer into the content page
     footer:
       label: Footer
-      $type: pageLinkField
+      $type: linkField
       i18n: false
       placeholder: Select a footer
       textInputAllowed: false
       required: true
+      datasource:
+        $type: jcrDatasource
+        workspace: footers
       chooser:
-        datasource:
-          $type: jcrDatasource
-          workspace: footers
         workbenchChooser:
           appName: footers-app
-        textInputAllowed: false
-        converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter # For easier manual fetch
+      converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter # For easier manual fetch
