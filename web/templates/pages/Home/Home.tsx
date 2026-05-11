@@ -1,5 +1,3 @@
-"use client";
-
 import { FooterArea } from "@/templates/components/FooterArea";
 import { EditableArea } from "@magnolia/react-editor";
 

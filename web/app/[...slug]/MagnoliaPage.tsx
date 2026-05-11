@@ -15,7 +15,7 @@ export default function MagnoliaPage({
 }: MagnoliaPageProps) {
   // console.log("Rendering MagnoliaPage with context:", ctx);
   // console.log("Page content:", page);
-  console.log("Template annotations:", templateAnnotations);
+  // console.log("Template annotations:", templateAnnotations);
 
   return (
     <div
