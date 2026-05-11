@@ -1,6 +1,10 @@
 # Light Module
 
-A light module is simply a directory on the file system that contains YAML definition files, FreeMarker template scripts, and other resource files of any type.
+Reference: [docs.magnolia-cms.com](https://docs.magnolia-cms.com/product-docs/modules/light-modules/)
+
+Magnolia has a modular architecture. A module can perform a task, package content, or provide specialized functionality.
+
+A Magnolia light module is a file and folder-based module. It can define every Magnolia item which can be configured in YAML – such as apps, content types, templates, dialogs, themes, and others. It can also contain a lightweight YAML-based module descriptor and web resources such as css and javascript files.
 
 ```sh
 mgnl create-light-module [options]  # create a light module with an empty folder structure
@@ -74,3 +78,34 @@ Reference: [App Launcher layout definition](https://docs.magnolia-cms.com/produc
 ```sh
 mgnl create-virtual-uri [options]   # create a virtual URI mapping in a light module
 ```
+
+### 5.3. Maven Module
+
+A Maven Module is a Java-based project used to build, package, and deploy custom functionality. It allows to integrate custom Java components, such as servlets, REST endpoints, and complex business logic.
+
+## 6. Magnolia Built-in Apps
+
+Reference: [List of apps](https://docs.magnolia-cms.com/product-docs/Apps/List-of-apps)
+
+### Pages App
+
+The Pages app allows users to build complete web pages.
+
+- In the Pages app, users enter content directly onto the page.
+- Content that comes from another Magnolia app can also be rendered.
+
+### Assets App
+
+The Assets app is a container app for asset management subapps such as the Magnolia Assets subapp, Amazon S3 Assets, or Bynder.
+
+- Magnolia Assets subapp is a Magnolia-native solution for simple Digital Asset Management (DAM) scenarios.
+
+### Categories App
+
+Reference: [Categorization module](https://docs.magnolia-cms.com/product-docs/modules/list-of-modules/categorization-module/)
+
+Categorization, also known as tagging or labeling, is a tool to manage large amounts of content.
+
+### Stories App
+
+(Available only in DX Core)

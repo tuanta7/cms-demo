@@ -18,39 +18,16 @@ Reference: [Magnolia Architecture](https://docs.magnolia-cms.com/product-docs/ad
 - **SPA**:
 - **JCR** (Java Content Repository): The JCR specification defines an abstract model and a Java API for data storage and related services commonly used by content-oriented applications. Apache Jackrabbit is a fully conforming implementation of the JCR API.
 - **DAM** (Digital Asset Management): A common term for Magnolia modules that allow you to store and work with images, videos and documents. Assets stored in the DAM can be used anywhere in the system.
-
-## 2. Headless CMS
-
-## 3. Multicluster Environments
-
-## 4. Multisite
-
-# Magnolia Introduction
+- **Resources**: Resource files are static Web resources (CSS, JavaScript), definition files for apps, dialogs and templates (YAML), and template scripts (FreeMarker).
 
 In a typical set up, Magnolia is installed with two web applications: the author instance and the public instance.
 
 - **Author Instance**: The Magnolia authoring instance is used for editing content. Administrators and editors have to login to this instance's Admin Central for configuring Magnolia and for adding or modifying pages.
 - **Public Instance**: The Magnolia public instance is accessed by website visitors. It is not accessed by editors directly but administrators are able to login and configure this instance as well.
 
-## 1. Modules
+Read More: [Glossary](https://docs.magnolia-cms.com/product-docs/getting-started-with-magnolia/glossary)
 
-Magnolia has a modular architecture. A module can perform a task, package content, or provide specialized functionality.
-
-### Light Modules
-
-Reference: [docs.magnolia-cms.com](https://docs.magnolia-cms.com/product-docs/modules/light-modules/)
-
-A Magnolia light module is a file and folder-based module. It can define every Magnolia item which can be configured in YAML – such as apps, content types, templates, dialogs, themes, and others. It can also contain a lightweight YAML-based module descriptor and web resources such as css and javascript files.
-
-### Maven Modules
-
-## 2. Key Concepts
-
-More: [Glossary](https://docs.magnolia-cms.com/product-docs/getting-started-with-magnolia/glossary)
-
-**Resources**: Resource files are static Web resources (CSS, JavaScript), definition files for apps, dialogs and templates (YAML), and template scripts (FreeMarker).
-
-### JCR Concepts (Content Type)
+### Content Type/JCR Concepts
 
 Reference: [Understanding JCR Basics](https://docs.magnolia-cms.com/product-docs/developing/content-types/content-types-tutorial/part-i-my-first-content-type/#_understanding_jcr_basics_node_type_namespace_and_workspace)
 
@@ -108,27 +85,8 @@ Reference: [Subapp Descriptor](https://docs.magnolia-cms.com/product-docs/apps/a
 
 > Subapp là custom form cho app?
 
-## 3. Magnolia Built-in Apps
+## 2. Headless CMS
 
-### ✨ Pages App
+## 3. Multicluster Environments
 
-Reference: [Pages app](https://docs.magnolia-cms.com/product-docs/Apps/List-of-apps/Pages-app/)
-
-The Pages app allows users to build complete web pages.
-
-- In the Pages app, users enter content directly onto the page.
-- Content that comes from another Magnolia app can also be rendered.
-
-### ✨ Assets App
-
-Referece: [Assets App](https://docs.magnolia-cms.com/product-docs/apps/list-of-apps/assets-app/)
-
-The Assets app is a container app for asset management subapps such as the Magnolia Assets subapp, Amazon S3 Assets, or Bynder.
-
-- Magnolia Assets subapp is a Magnolia-native solution for simple Digital Asset Management (DAM) scenarios.
-
-### ✨ Categories App
-
-### ✨ Stories App
-
-(Available only in DX Core)
+## 4. Multisite
