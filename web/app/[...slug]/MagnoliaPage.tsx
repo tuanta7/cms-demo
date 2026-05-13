@@ -8,19 +8,13 @@ type MagnoliaPageProps = {
   templateAnnotations?: TemplateAnnotationsType;
 };
 
-export default function MagnoliaPage({
-  page,
-  ctx,
-  templateAnnotations,
-}: MagnoliaPageProps) {
-  // console.log("Rendering MagnoliaPage with context:", ctx);
-  // console.log("Page content:", page);
-  // console.log("Template annotations:", templateAnnotations);
+export default function MagnoliaPage({ page, ctx, templateAnnotations }: MagnoliaPageProps) {
+  console.log("Rendering MagnoliaPage with context:", ctx);
+  console.log("Page content:", page);
+  console.log("Template annotations:", templateAnnotations);
 
   return (
-    <div
-      className={ctx?.isMagnoliaEdit ? "disable-a-pointer-events grow" : "grow"}
-    >
+    <div className={ctx?.isMagnoliaEdit ? "disable-a-pointer-events grow" : "grow"}>
       <EditablePage
         content={page}
         config={config}

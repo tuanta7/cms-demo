@@ -4,11 +4,6 @@ declare type ContentType = NodeType & {
 
 declare type PageType = NodeType & {
   title?: string;
-  content: ContentType;
-  header?: string;
-  footer?: string;
-  customHeader: ContentType;
-  customFooter: ContentType;
   metadata: NodeType;
   hidden?: boolean;
 };

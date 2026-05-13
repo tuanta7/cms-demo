@@ -1,14 +1,13 @@
 import { EditableArea } from "@magnolia/react-editor";
 
-type PlayersPageProps = PageType;
+type PlayersPageProps = PageType & {
+  content: ContentType;
+  header?: string;
+  footer?: string;
+};
 
 const PlayersPage = ({ content }: PlayersPageProps) => {
-  return (
-    <>
-      <h1 className="text-3xl font-bold">Players</h1>
-      {content && <EditableArea content={content} />}
-    </>
-  );
+  return <>{content && <EditableArea content={content} />}</>;
 };
 
 export default PlayersPage;
